@@ -1,4 +1,4 @@
-24295
+24289
 84C:\C-BIA\MI1-Autodeploy\node_modules\postcss-reduce-idents\dist\lib\counter-style.js132986245872746021 0
 71C:\C-BIA\MI1-Autodeploy\node_modules\lines-and-columns\build\index.d.ts132986245856722392 0
 54C:\C-BIA\MI1-Autodeploy\node_modules\os-tmpdir\license132986245862838744 0
@@ -19,7 +19,7 @@
 85C:\C-BIA\MI1-Autodeploy\node_modules\core-js\library\modules\es6.reflect.construct.js132986245848617968 0
 56C:\C-BIA\MI1-Autodeploy\node_modules\lodash\isBoolean.js132986245860639450 0
 85C:\C-BIA\MI1-Autodeploy\node_modules\postcss-calc\node_modules\postcss\lib\at-rule.js132986245865616345 0
-34C:\C-BIA\MI1-Autodeploy\.gitignore133013867402649885 0
+34C:\C-BIA\MI1-Autodeploy\.gitignore133013914248802561 0
 57C:\C-BIA\MI1-Autodeploy\node_modules\ws\lib\Extensions.js132986245886240148 0
 70C:\C-BIA\MI1-Autodeploy\node_modules\csso\lib\replace\property\font.js132986245850557889 0
 101C:\C-BIA\MI1-Autodeploy\node_modules\postcss-normalize-url\node_modules\source-map\dist\source-map.js132986245872312715 0
@@ -191,7 +191,7 @@
 81C:\C-BIA\MI1-Autodeploy\node_modules\postcss-zindex\node_modules\has-flag\license132986245874521336 0
 61C:\C-BIA\MI1-Autodeploy\node_modules\posthtml-parser\index.js132986245874957191 0
 65C:\C-BIA\MI1-Autodeploy\node_modules\whatwg-mimetype\lib\utils.js132986245886006717 0
-28C:\C-BIA\MI1-Autodeploy\dist133013819563686225 1
+28C:\C-BIA\MI1-Autodeploy\dist133013915295423679 1
 100C:\C-BIA\MI1-Autodeploy\node_modules\resolve\test\resolver\multirepo\packages\package-a\package.json132986245876394301 0
 70C:\C-BIA\MI1-Autodeploy\node_modules\postcss-discard-comments\dist\lib133009730901194383 1
 51C:\C-BIA\MI1-Autodeploy\node_modules\lodash\pull.js132986245860916147 0
@@ -658,7 +658,6 @@
 63C:\C-BIA\MI1-Autodeploy\node_modules\acorn-globals\node_modules133009729994971286 1
 52C:\C-BIA\MI1-Autodeploy\node_modules\uniq\.npmignore132986245885287815 0
 70C:\C-BIA\MI1-Autodeploy\node_modules\typescript\lib\tsserverlibrary.js132986245881705203 0
-43C:\C-BIA\MI1-Autodeploy\dist\Epic_Home.html133009755634519096 0
 67C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\node-resolver-core\src133009729562048425 1
 91C:\C-BIA\MI1-Autodeploy\node_modules\uglify-js\node_modules\source-map\lib\binary-search.js132986245884975244 0
 42C:\C-BIA\MI1-Autodeploy\node_modules\axios133009730057352025 1
@@ -6936,7 +6935,7 @@
 58C:\C-BIA\MI1-Autodeploy\node_modules\parse-asn1\aesid.json132986245864600941 0
 86C:\C-BIA\MI1-Autodeploy\node_modules\jsdom\lib\jsdom\living\generated\SVGStringList.js132986245855718932 0
 60C:\C-BIA\MI1-Autodeploy\node_modules\serve-static\HISTORY.md132986245876740986 0
-50C:\C-BIA\MI1-Autodeploy\dist\index.ac5dc9b3.js.map133009752939663975 0
+50C:\C-BIA\MI1-Autodeploy\dist\index.ac5dc9b3.js.map133013915295373473 0
 87C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\bundler-default\node_modules\@parcel\utils133009729495361611 1
 86C:\C-BIA\MI1-Autodeploy\node_modules\postcss-filter-plugins\node_modules\chalk\license132986245868680933 0
 57C:\C-BIA\MI1-Autodeploy\node_modules\serve-static\LICENSE132986245876740986 0
@@ -7111,7 +7110,7 @@
 73C:\C-BIA\MI1-Autodeploy\node_modules\caniuse-db\features-json\webgpu.json132986245842299724 0
 108C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\reporter-cli\node_modules\@parcel\utils\test\objectHash.test.js132986245811874643 0
 52C:\C-BIA\MI1-Autodeploy\node_modules\ret\lib\util.js132986245876482157 0
-46C:\C-BIA\MI1-Autodeploy\dist\index.03a7a6b0.js133013819562815113 0
+46C:\C-BIA\MI1-Autodeploy\dist\index.03a7a6b0.js133013915295256051 0
 55C:\C-BIA\MI1-Autodeploy\node_modules\lodash\fp\_util.js132986245859576461 0
 63C:\C-BIA\MI1-Autodeploy\node_modules\parent-module\package.json132986245864579844 0
 72C:\C-BIA\MI1-Autodeploy\node_modules\caniuse-lite\data\regions\alt-oc.js132986245845308916 0
@@ -9121,7 +9120,7 @@
 71C:\C-BIA\MI1-Autodeploy\node_modules\babel-runtime\helpers\_inherits.js132986245838573647 0
 129C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\transformer-posthtml\node_modules\dom-serializer\node_modules\entities\lib\encode.js132986245832454239 0
 110C:\C-BIA\MI1-Autodeploy\node_modules\postcss-minify-font-values\node_modules\chalk\node_modules\supports-color133009730956281161 1
-50C:\C-BIA\MI1-Autodeploy\dist\index.9509b41e.js.map133013819561727376 0
+50C:\C-BIA\MI1-Autodeploy\dist\index.9509b41e.js.map133013915295390621 0
 88C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\transformer-js\node_modules\@parcel\workers133009729907603386 1
 103C:\C-BIA\MI1-Autodeploy\node_modules\core-js\library\modules\es6.reflect.get-own-property-descriptor.js132986245848628041 0
 103C:\C-BIA\MI1-Autodeploy\node_modules\postcss-minify-selectors\node_modules\source-map\lib\base64-vlq.js132986245871748110 0
@@ -13241,7 +13240,6 @@
 56C:\C-BIA\MI1-Autodeploy\node_modules\.bin\esvalidate.ps1132986245792497512 0
 53C:\C-BIA\MI1-Autodeploy\node_modules\lmdb\src\dbi.cpp132986245858394902 0
 57C:\C-BIA\MI1-Autodeploy\node_modules\lmdb\src\lmdb-js.cpp132986245858405300 0
-53C:\C-BIA\MI1-Autodeploy\dist\leftSideBar.5a502e17.png133009755199426101 0
 80C:\C-BIA\MI1-Autodeploy\node_modules\jsdom\lib\jsdom\living\register-elements.js132986245856231681 0
 55C:\C-BIA\MI1-Autodeploy\node_modules\lmdb\src\lmdb-js.h132986245858415889 0
 54C:\C-BIA\MI1-Autodeploy\node_modules\lmdb\src\misc.cpp132986245858415889 0
@@ -13469,7 +13467,6 @@
 83C:\C-BIA\MI1-Autodeploy\node_modules\jsdom\lib\jsdom\living\window\Location-impl.js132986245856281653 0
 69C:\C-BIA\MI1-Autodeploy\node_modules\clap\node_modules\supports-color133009730289012930 1
 96C:\C-BIA\MI1-Autodeploy\node_modules\jsdom\lib\jsdom\living\websockets\WebSocket-impl-browser.js132986245856261697 0
-64C:\C-BIA\MI1-Autodeploy\dist\leftSideBarBelowButton.2b955c5a.png133009755199451830 0
 56C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\css\LICENSE132986245797336674 0
 55C:\C-BIA\MI1-Autodeploy\node_modules\babel-register\lib133009730071935127 1
 64C:\C-BIA\MI1-Autodeploy\node_modules\acorn-walk\dist\walk.js.map132986245835769233 0
@@ -13673,7 +13670,7 @@
 81C:\C-BIA\MI1-Autodeploy\node_modules\jsdom\lib\jsdom\living\generated\Document.js132986245855291139 0
 89C:\C-BIA\MI1-Autodeploy\node_modules\jsdom\lib\jsdom\living\generated\DocumentFragment.js132986245855291139 0
 85C:\C-BIA\MI1-Autodeploy\node_modules\jsdom\lib\jsdom\living\generated\DocumentType.js132986245855301139 0
-46C:\C-BIA\MI1-Autodeploy\dist\index.a3a78cd9.js133013819562815113 0
+46C:\C-BIA\MI1-Autodeploy\dist\index.a3a78cd9.js133013915295256051 0
 82C:\C-BIA\MI1-Autodeploy\node_modules\jsdom\lib\jsdom\living\generated\DOMParser.js132986245855281118 0
 62C:\C-BIA\MI1-Autodeploy\node_modules\browserslist\package.json132986245839941063 0
 85C:\C-BIA\MI1-Autodeploy\node_modules\jsdom\lib\jsdom\living\generated\DOMStringMap.js132986245855281118 0
@@ -15773,7 +15770,7 @@
 76C:\C-BIA\MI1-Autodeploy\node_modules\core-js\modules\es6.typed.int8-array.js132986245849617705 0
 85C:\C-BIA\MI1-Autodeploy\node_modules\core-js\modules\es6.typed.uint8-clamped-array.js132986245849627727 0
 68C:\C-BIA\MI1-Autodeploy\node_modules\core-js\modules\es6.weak-set.js132986245849637674 0
-51C:\C-BIA\MI1-Autodeploy\dist\index.7a30a80f.css.map133013819561579075 0
+51C:\C-BIA\MI1-Autodeploy\dist\index.7a30a80f.css.map133013915295261062 0
 105C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\transformer-posthtml\node_modules\@parcel\utils\.eslintrc.js132986245831921519 0
 64C:\C-BIA\MI1-Autodeploy\node_modules\browserify-des\package.json132986245839570604 0
 66C:\C-BIA\MI1-Autodeploy\node_modules\@codemirror\highlight\LICENSE132986245793000129 0
@@ -17934,7 +17931,7 @@
 85C:\C-BIA\MI1-Autodeploy\node_modules\@swc\helpers\lib\_check_private_redeclaration.js132986245835082906 0
 82C:\C-BIA\MI1-Autodeploy\node_modules\caniuse-db\features-json\css-containment.json132986245840953573 0
 85C:\C-BIA\MI1-Autodeploy\node_modules\caniuse-db\features-json\css-default-pseudo.json132986245840963861 0
-51C:\C-BIA\MI1-Autodeploy\dist\index.1303bb05.css.map133009752937709785 0
+51C:\C-BIA\MI1-Autodeploy\dist\index.1303bb05.css.map133013915295261062 0
 86C:\C-BIA\MI1-Autodeploy\node_modules\caniuse-db\features-json\css-descendant-gtgt.json132986245840973838 0
 84C:\C-BIA\MI1-Autodeploy\node_modules\caniuse-db\features-json\css-focus-visible.json132986245841011350 0
 116C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\optimizer-htmlnano\node_modules\postcss-reduce-initial\types\index.d.ts132986245802517545 0
@@ -19874,7 +19871,7 @@
 77C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\transformer-js\native-browser.js132986245818185488 0
 69C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\transformer-js\native.js132986245818185488 0
 72C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\transformer-js\package.json132986245819652208 0
-50C:\C-BIA\MI1-Autodeploy\dist\index.a3a78cd9.js.map133013819562815113 0
+50C:\C-BIA\MI1-Autodeploy\dist\index.a3a78cd9.js.map133013915295262200 0
 88C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\transformer-js\parcel-swc.darwin-arm64.node132986245820846859 0
 121C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\pseudo\nth-last-child.js132986245800928117 0
 86C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\transformer-js\parcel-swc.darwin-x64.node132986245822154568 0
@@ -22973,7 +22970,7 @@
 89C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\optimizer-htmlnano\node_modules\entities\lib133009729613955403 1
 98C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\optimizer-htmlnano\node_modules\entities\package.json132986245801372640 0
 99C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\optimizer-htmlnano\node_modules\entities\lib\decode.js132986245801304143 0
-39C:\C-BIA\MI1-Autodeploy\dist\index.html133013819563563140 0
+39C:\C-BIA\MI1-Autodeploy\dist\index.html133013915295256051 0
 109C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\optimizer-htmlnano\node_modules\entities\lib\decode_codepoint.js132986245801314091 0
 106C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\optimizer-htmlnano\node_modules\entities\lib\encode-trie.d.ts132986245801314091 0
 110C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\optimizer-htmlnano\node_modules\entities\lib\encode-trie.d.ts.map132986245801324116 0
@@ -23799,7 +23796,7 @@
 73C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\core\lib\summarizeRequest.js132986245795609580 0
 73C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\core\lib\UncommittedAsset.js132986245795477936 0
 67C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\core\lib\Validation.js132986245795488111 0
-47C:\C-BIA\MI1-Autodeploy\dist\index.7a30a80f.css133013819561542926 0
+47C:\C-BIA\MI1-Autodeploy\dist\index.7a30a80f.css133013915295256051 0
 78C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\core\lib\requests\EntryRequest.js132986245795568174 0
 79C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\core\lib\requests\TargetRequest.js132986245795587956 0
 83C:\C-BIA\MI1-Autodeploy\node_modules\@parcel\core\lib\requests\ValidationRequest.js132986245795597935 0
@@ -24087,7 +24084,7 @@
 50C:\C-BIA\MI1-Autodeploy\node_modules\@lezer\common133009729486793071 1
 46C:\C-BIA\MI1-Autodeploy\node_modules\@lezer\lr133009729487802979 1
 54C:\C-BIA\MI1-Autodeploy\node_modules\@lezer\lr\LICENSE132986245793464983 0
-46C:\C-BIA\MI1-Autodeploy\dist\index.20bf30ec.js133009752938758894 0
+46C:\C-BIA\MI1-Autodeploy\dist\index.20bf30ec.js133013915295261062 0
 59C:\C-BIA\MI1-Autodeploy\node_modules\@lezer\lr\package.json132986245793494952 0
 56C:\C-BIA\MI1-Autodeploy\node_modules\@lezer\lr\README.md132986245793464983 0
 66C:\C-BIA\MI1-Autodeploy\node_modules\@lezer\lr\dist\constants.d.ts132986245793464983 0
@@ -24278,17 +24275,14 @@
 30C:\C-BIA\MI1-Autodeploy\lib\js133012420611144121 1
 68C:\C-BIA\MI1-Autodeploy\lib\js\fhir-client-cerner-additions-1.0.0.js133005189931274493 0
 73C:\C-BIA\MI1-Autodeploy\lib\css\cerner-smart-embeddable-lib-1.0.0.min.css133005189931264492 0
-45C:\C-BIA\MI1-Autodeploy\dist\Cerner_Home.html133009758159076480 0
-50C:\C-BIA\MI1-Autodeploy\dist\index.03a7a6b0.js.map133013819562815113 0
-46C:\C-BIA\MI1-Autodeploy\dist\index.0d972a35.js133009752938769075 0
-50C:\C-BIA\MI1-Autodeploy\dist\index.0d972a35.js.map133009752938827023 0
-47C:\C-BIA\MI1-Autodeploy\dist\index.1303bb05.css133009752937702087 0
-50C:\C-BIA\MI1-Autodeploy\dist\index.20bf30ec.js.map133009752938758894 0
-46C:\C-BIA\MI1-Autodeploy\dist\index.9509b41e.js133013819561697230 0
-46C:\C-BIA\MI1-Autodeploy\dist\index.ac5dc9b3.js133009752939634888 0
-51C:\C-BIA\MI1-Autodeploy\dist\MI1_Enola.0c95ccc3.png133009755199345968 0
-51C:\C-BIA\MI1-Autodeploy\dist\preloader.d5b95a99.gif133009752936883401 0
-50C:\C-BIA\MI1-Autodeploy\dist\topSide.a7bb2b7b.jpeg133009755199359825 0
+50C:\C-BIA\MI1-Autodeploy\dist\index.03a7a6b0.js.map133013915295262200 0
+46C:\C-BIA\MI1-Autodeploy\dist\index.0d972a35.js133013915295262200 0
+50C:\C-BIA\MI1-Autodeploy\dist\index.0d972a35.js.map133013915295385626 0
+47C:\C-BIA\MI1-Autodeploy\dist\index.1303bb05.css133013915295256051 0
+50C:\C-BIA\MI1-Autodeploy\dist\index.20bf30ec.js.map133013915295262200 0
+46C:\C-BIA\MI1-Autodeploy\dist\index.9509b41e.js133013915295262200 0
+46C:\C-BIA\MI1-Autodeploy\dist\index.ac5dc9b3.js133013915295261062 0
+51C:\C-BIA\MI1-Autodeploy\dist\preloader.d5b95a99.gif133013915295256051 0
 42C:\C-BIA\MI1-Autodeploy\assets\Epic_Images133009729467461307 1
 64C:\C-BIA\MI1-Autodeploy\assets\particlesjs-config_chocolate.json132986245791584976 0
 61C:\C-BIA\MI1-Autodeploy\assets\particlesjs-config_claire.json132986245791594847 0
