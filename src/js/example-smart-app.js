@@ -52,7 +52,8 @@
           p.id = patient.id;
           
           
-          // let getMRN = patient.identifier;
+          let getMRN = patient;
+          console.log("Printing Patient:", getMRN)
 
           // for(i=0 ; i <= getMRN.length ; i++) {
           //   getText = i.find('text')
