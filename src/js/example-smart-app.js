@@ -1,4 +1,4 @@
-const smartData = ""
+
 
 (function(window){
   window.extractData = function() {
@@ -13,6 +13,8 @@ const smartData = ""
       console.log('Patient present in smart:' , smart.hasOwnProperty('patient'))
       if (smart.hasOwnProperty('patient')) {
         var patient = smart.patient;
+        var smartData = ""
+        console.log(typeof(smart))
         smartData = smart;
         
         console.log("Details smart:",smart)

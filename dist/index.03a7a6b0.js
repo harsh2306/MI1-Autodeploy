@@ -1,4 +1,4 @@
-const smartData = ("")(function(window) {
+(function(window) {
     window.extractData = function() {
         var ret = $.Deferred();
         function onError() {
@@ -9,6 +9,8 @@ const smartData = ("")(function(window) {
             console.log('Patient present in smart:', smart.hasOwnProperty('patient'));
             if (smart.hasOwnProperty('patient')) {
                 var patient1 = smart.patient;
+                var smartData = "";
+                console.log(typeof smart);
                 smartData = smart;
                 console.log("Details smart:", smart);
                 var pt = patient1.read();
