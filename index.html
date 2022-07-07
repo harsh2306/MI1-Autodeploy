@@ -80,6 +80,7 @@
             <h4>Patient Name: <h4 id='fname'> </h4><h4 id='lname'></h4> </h4>
             <h4>Medical Record Number (MRN): <h4 id='id'></h4></h4>
             <h4>Date Of Birth :<h4 id='birthdate'></h4></h4>
+            <input type="text" name="Name" id="smartTextBox">
         </div>
         <div id="loading" class="spinner">
             <div class="bounce1"></div>
@@ -233,7 +234,7 @@
         
     </div>
     </div>
-    <script>
+    <script type="module">
         function tabMgmt(evt, cityName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");

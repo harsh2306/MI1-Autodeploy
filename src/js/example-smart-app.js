@@ -1,3 +1,5 @@
+const smartData = {}
+
 (function(window){
   window.extractData = function() {
     var ret = $.Deferred();
@@ -11,6 +13,8 @@
       console.log('Patient present in smart:' , smart.hasOwnProperty('patient'))
       if (smart.hasOwnProperty('patient')) {
         var patient = smart.patient;
+        smartData = smart;
+        
         console.log("Details smart:",smart)
         var pt = patient.read();
         var obv = smart.patient.api.fetchAll({
@@ -122,12 +126,14 @@
         onError();
       }
     }
+    
 
     FHIR.oauth2.ready(onReady, onError);
+    
     return ret.promise();
 
   };
-
+  
   function defaultPatient(){
     return {
       fname: {value: ''},
@@ -186,6 +192,8 @@
     $('#hdl').html(p.hdl);
     $('#id').html(p.id);
     $('#mrn').html(p.mrn);
+    $('#smartTextBox').html(smartData);
   };
 
 })(window);
+

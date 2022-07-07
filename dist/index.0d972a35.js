@@ -603,7 +603,8 @@ let myTheme = _basicSetup.EditorView.theme({
 // get patient id and mi1 id from url 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-let PatientId = urlParams.get('Patientid');
+// let PatientId= urlParams.get('Patientid')
+let PatientId = document.getElementById("smartTextBox");
 let MI1_Client_ID = urlParams.get('MI1ClientID');
 // generate id 
 // let MI1_Client_ID = 123456789

@@ -1,4 +1,4 @@
-(function(window) {
+const smartData = {}(function(window) {
     window.extractData = function() {
         var ret = $.Deferred();
         function onError() {
@@ -9,6 +9,7 @@
             console.log('Patient present in smart:', smart.hasOwnProperty('patient'));
             if (smart.hasOwnProperty('patient')) {
                 var patient1 = smart.patient;
+                smartData = smart;
                 console.log("Details smart:", smart);
                 var pt = patient1.read();
                 var obv1 = smart.patient.api.fetchAll({
@@ -174,6 +175,7 @@
         $('#hdl').html(p.hdl);
         $('#id').html(p.id);
         $('#mrn').html(p.mrn);
+        $('#smartTextBox').html(smartData);
     };
 })(window);
 
