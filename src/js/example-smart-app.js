@@ -1,4 +1,4 @@
-const smartData = {}
+const smartData = ""
 
 (function(window){
   window.extractData = function() {

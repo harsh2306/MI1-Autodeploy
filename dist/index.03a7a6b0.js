@@ -1,4 +1,4 @@
-const smartData = {}(function(window) {
+const smartData = ("")(function(window) {
     window.extractData = function() {
         var ret = $.Deferred();
         function onError() {
