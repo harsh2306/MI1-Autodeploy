@@ -29,23 +29,21 @@
     <script src="/launch.a3a78cd9.js"></script>
     <script>var url = new URL(location.href);
 console.log(url);
-if (url.searchParams.has("MI1CientId")) {
-    var MI1CientId = url.searchParams.get('MI1CientId');
-    console.log(MI1CientId);
-    console.log(typeof MI1CientId);
-    console.log("Found MI1CientId");
+if (url.searchParams.has("MI1ClientId")) {
+    var MI1ClientId = url.searchParams.get('MI1ClientId');
+    console.log("Found MI1ClientId");
     //check if MI1cient Id id present in the URL or Not
     // For EPIC 
-    if (MI1CientId == 123456789) {
-        console.log("Found EPIC MI1CientId");
+    if (MI1ClientId == 123456789) {
+        console.log("Found EPIC MI1ClientId");
         FHIR.oauth2.authorize({
             'client_id': 'f8e2f73f-7b10-4b2e-9fd3-ebd228380db9',
             'scope': 'patient/Patient.read patient/Observation.read online_access launch openid fhirUser profile'
         });
     }
     // For CERNER 
-    if (MI1CientId == 1122334455) {
-        console.log("Found CERNER MI1CientId");
+    if (MI1ClientId == 1122334455) {
+        console.log("Found CERNER MI1ClientId");
         FHIR.oauth2.authorize({
             'client_id': '432ea04a-1d52-4674-8e9b-f17e86745544',
             'scope': 'patient/Patient.read patient/Observation.read online_access launch openid fhirUser profile'
