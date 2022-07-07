@@ -1,6 +1,7 @@
 
 
 (function(window){
+  var smartData = ""
   window.extractData = function() {
     var ret = $.Deferred();
 
@@ -13,7 +14,7 @@
       console.log('Patient present in smart:' , smart.hasOwnProperty('patient'))
       if (smart.hasOwnProperty('patient')) {
         var patient = smart.patient;
-        var smartData = ""
+        
         console.log(typeof(smart))
         smartData = smart;
         
