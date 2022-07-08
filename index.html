@@ -206,10 +206,36 @@
 
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
+
+        (function(window){
+            window.extractData = function() {
+                var ret = $.Deferred();
+
+                function onError() {
+                    console.log('Loading error', arguments);
+                    ret.reject();
+                }
+
+                function onReady(smart)  {
+                    if (smart.hasOwnProperty('patient')) {
+                        var patient = smart.patient;
+                        console.log("Printing encounter", smart.tokenResponse.encounter);
+                        document.getElementById("encounterRef").innerHTML = smart.tokenResponse.encounter;
+                        var pt = patient.read();
+                    } else {
+                        onError();
+                    }
+                    
+                }
+                FHIR.oauth2.ready(onReady, onError);
+    
+                return ret.promise();}
+
+        })(window);
     </script>
 
     <!-- Their js files -->
-    <script src='./src/js/example-smart-app.js'></script>
+    
     <script src='./lib/js/fhir-client-v0.1.12.js'></script>
     <script src='./lib/js/fhir-client-cerner-additions-1.0.0.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
