@@ -1,6 +1,6 @@
 (function(window){
   var smartData = ""
-  window.smartPatientId = ""
+  window.globalPatientId = ""
   window.extractData = function() {
     var ret = $.Deferred();
 
@@ -56,10 +56,13 @@
           p.fname = fname;
           p.lname = lname;
           p.height = getQuantityValueAndUnit(height[0]);
-          // Using  global varible
-          smartPatientId = patient.id;
           p.id = patient.id;
           p.mrn = patient.identifier[1].value;
+
+          // Using  global varible
+          globalPatientId = patient.id;
+          
+          
           
           
           let getMRN = patient;

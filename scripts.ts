@@ -37,8 +37,9 @@ var lastFetchedCUI = ''
 var isCheckingOrder = false
 var suggestions = document.getElementById('suggestions-content')
 
+
 // for Cerner clinical write testing only 
-console.log(window.smartPatientId)
+
 var encounterReference = '97954261'
 var practitionerReference = '12743472'
 // Theme Customization
@@ -86,10 +87,10 @@ let myTheme = EditorView.theme({
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 // let PatientId= urlParams.get('Patientid')
-let PatientId = document.getElementById("smartTextBox")
-let MI1_Client_ID= urlParams.get('MI1ClientID')
-
-
+// let PatientId = document.getElementById("smartTextBox")
+let PatientId = window.smartPatientId
+// let MI1_Client_ID= urlParams.get('MI1ClientID')
+let MI1_Client_ID= window.MI1ClientId
 
 // generate id 
 // let MI1_Client_ID = 123456789
