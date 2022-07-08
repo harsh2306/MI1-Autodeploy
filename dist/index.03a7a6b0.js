@@ -10,10 +10,14 @@
             console.log('Patient present in smart:', smart.hasOwnProperty('patient'));
             if (smart.hasOwnProperty('patient')) {
                 var patient1 = smart.patient;
-                console.log(typeof smart);
-                smartData = smart;
-                console.log(smartData);
                 console.log("Details smart:", smart);
+                console.log("printing type of smart: ", typeof smart);
+                smartData = smart;
+                console.log("printing smart object: ", smartData);
+                console.log("printing type of smart data", typeof smartData);
+                console.log("printing stringified smart: ", String(smartData));
+                document.getElementById('smartLabel').innerHTML = String(smartData);
+                document.getElementById('smartTextBox').innerHTML = smartData;
                 var pt = patient1.read();
                 var obv1 = smart.patient.api.fetchAll({
                     type: 'Observation',
