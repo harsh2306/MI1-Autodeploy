@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"bMI4S":[function(require,module,exports) {
+})({"6akXc":[function(require,module,exports) {
 "use strict";
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -1223,16 +1223,19 @@ getSendButton.addEventListener('click', function(e) {
 // })
 // Read latest 5 Clinical data
 let getReadButton = document.getElementById('clinicalRead');
+let returnData = [];
+let clinicalreadresponsedata = '';
 getReadButton.addEventListener('click', function(e) {
     _axiosDefault.default.post(apiUrl_Dev + 'ReadClinicalNotes', {
         "MI1ClientID": MI1_Client_ID,
         "patientId": PatientId
     }).then((response)=>{
-        let returnData = [];
+        returnData = [];
         returnData = response.data;
-        console.log(returnData['returnData'][0]['DecodedData']);
-        let clinicalreadresponsedata = atob(returnData['returnData'][0]['DecodedData']);
-        // console.log(JSON.parse(clinicalreadresponsedata[0]))
+        // console.log(returnData)
+        clinicalreadresponsedata = atob(returnData['returnData'][0]['EncodedData']);
+        console.log(clinicalreadresponsedata);
+        returnData = null;
         view.dispatch({
             changes: {
                 from: currentLineFrom,
@@ -25269,6 +25272,6 @@ var utils = require('./../utils');
     return utils.isObject(payload) && payload.isAxiosError === true;
 };
 
-},{"./../utils":"5By4s"}]},["bMI4S","ixaFm"], "ixaFm", "parcelRequire2667")
+},{"./../utils":"5By4s"}]},["6akXc","ixaFm"], "ixaFm", "parcelRequire2667")
 
 //# sourceMappingURL=index.0d972a35.js.map

@@ -72,63 +72,16 @@
     <div id="parentFhir" class="container">
         <div id="fhirpatientid">eXbMln3hu0PfFrpv2HgVHyg3</div>
         <div id="fhir">
-            <h4>Patient Name: <h4 id="fname"> </h4><h4 id="lname"></h4> </h4>
-            <h4>Medical Record Number (MRN): <h4 id="mrn"></h4></h4>
-            <h4>Date Of Birth :<h4 id="birthdate"></h4></h4>
-            <h4>Patient Id: <h4 id="id"></h4></h4>
-            <h4>Encounter Reference<h4 id="encounterRef"></h4></h4>
+            <h4>Patient Name:</h4>
+            <h4>Medical Record Number (MRN):</h4>
+            <h4>Date Of Birth: </h4>
+            <h4>Patient Id: </h4>
+            <h4>Encounter Reference: </h4>
         </div>
         <div id="loading" class="spinner">
             <div class="bounce1"></div>
             <div class="bounce2"></div>
             <div class="bounce3"></div>
-          </div>
-        <div id="holder">
-            <h2>Example-SMART-App</h2>
-      
-            <h2>Patient Resource</h2>
-            <table>
-              <tr>
-                <th>First Name:</th>
-                <td id="fname"></td>
-              </tr>
-              <tr>
-                <th>Last Name:</th>
-                <td id="lname"></td>
-              </tr>
-              <tr>
-                <th>Gender:</th>
-                <td id="gender"></td>
-              </tr>
-              <tr>
-                <th>Date of Birth:</th>
-                <td id="birthdate"></td>
-              </tr>
-            </table>
-            <h2>Observation Resource</h2>
-            <table>
-              <tr>
-                <th>Height:</th>
-                <td id="height"></td>
-              </tr>
-              <tr>
-                <th>Systolic Blood Pressure:</th>
-                <td id="systolicbp"></td>
-      
-              </tr>
-              <tr>
-                <th>Diastolic Blood Pressure:</th>
-                <td id="diastolicbp"></td>
-              </tr>
-              <tr>
-                <th>LDL:</th>
-                <td id="ldl"></td>
-              </tr>
-              <tr>
-                <th>HDL:</th>
-                <td id="hdl"></td>
-              </tr>
-            </table>
           </div>
         <!-- <button id="jsondata">Get Json Data</button> -->
     </div>
@@ -241,11 +194,30 @@
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+(function(window) {
+    window.extractData = function() {
+        var ret = $.Deferred();
+        function onError() {
+            console.log('Loading error', arguments);
+            ret.reject();
+        }
+        function onReady(smart) {
+            if (smart.hasOwnProperty('patient')) {
+                var patient = smart.patient;
+                console.log("Printing encounter", smart.tokenResponse.encounter);
+                document.getElementById("encounterRef").innerHTML = smart.tokenResponse.encounter;
+                var pt = patient.read();
+            } else onError();
+        }
+        FHIR.oauth2.ready(onReady, onError);
+        return ret.promise();
+    };
+})(window);
 
 </script>
 
     <!-- Their js files -->
-    <script src="/index.03a7a6b0.js"></script>
+    
     <script src="/index.9509b41e.js"></script>
     <script src="/index.a3a78cd9.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
