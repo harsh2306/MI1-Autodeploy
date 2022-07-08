@@ -183,7 +183,6 @@
         $('#hdl').html(p.hdl);
         $('#id').html(p.id);
         $('#mrn').html(p.mrn);
-        $('#smartTextBox').html(smartData);
     };
 })(window);
 

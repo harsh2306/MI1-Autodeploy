@@ -88,11 +88,11 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 // let PatientId= urlParams.get('Patientid')
 // let PatientId = document.getElementById("smartTextBox")
-let PatientId = window.smartPatientId
-// let MI1_Client_ID= urlParams.get('MI1ClientID')
-let MI1_Client_ID= window.MI1ClientId
+let PatientId = document.getElementById("id").textContent
+let MI1_Client_ID= urlParams.get('MI1ClientID')
+// let MI1_Client_ID= window.MI1ClientId
 
-console.log(MI1_Client_ID, PatientId)
+console.log(PatientId)
 
 // generate id 
 // let MI1_Client_ID = 123456789

@@ -1,6 +1,6 @@
 (function(window){
   var smartData = ""
-  window.globalPatientId = ""
+  window.globalPatientId = "" 
   window.extractData = function() {
     var ret = $.Deferred();
 
@@ -61,7 +61,6 @@
 
           // Using  global varible
           globalPatientId = patient.id;
-          
           
           
           
@@ -201,7 +200,6 @@
     $('#hdl').html(p.hdl);
     $('#id').html(p.id);
     $('#mrn').html(p.mrn);
-    $('#smartTextBox').html(smartData);
   };
 
 })(window);
