@@ -211,8 +211,8 @@ document.getElementById("defaultOpen").click();
         function onReady(smart) {
             if (smart.hasOwnProperty('patient')) {
                 var patient = smart.patient;
-                console.log("Printing encounter", smart.tokenResponse.encounter);
-                document.getElementById("PatientName").innerHTML = smart.patient.name[0].given;
+                console.log("Smart Object", smart);
+                // document.getElementById("PatientName").innerHTML = smart.patient.name[0].given;
                 document.getElementById("Patientid").innerHTML = smart.patient.id;
                 document.getElementById("DOB").innerHTML = smart.patient.birthDate;
                 document.getElementById("MRN").innerHTML = smart.patient.identifier[1].value;
