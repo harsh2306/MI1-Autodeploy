@@ -12,6 +12,7 @@
                 var patient1 = smart.patient;
                 console.log(typeof smart);
                 smartData = smart;
+                console.log(smartData);
                 console.log("Details smart:", smart);
                 var pt = patient1.read();
                 var obv1 = smart.patient.api.fetchAll({

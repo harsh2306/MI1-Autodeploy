@@ -17,6 +17,7 @@
         
         console.log(typeof(smart))
         smartData = smart;
+        console.log(smartData);
         
         console.log("Details smart:",smart)
         var pt = patient.read();
