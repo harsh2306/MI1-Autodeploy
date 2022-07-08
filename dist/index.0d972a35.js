@@ -562,6 +562,7 @@ var lastFetchedCUI = '';
 var isCheckingOrder = false;
 var suggestions = document.getElementById('suggestions-content');
 // for Cerner clinical write testing only 
+console.log(window.smartPatientId);
 var encounterReference = '97954261';
 var practitionerReference = '12743472';
 // Theme Customization
@@ -634,7 +635,7 @@ dataJson.push({
     "Problems": []
 });
 // local fhir api call to get patients data 
-_axiosDefault.default.post(apiUrl_Dev + "PatientData", fhirBody).then((response)=>{
+_axiosDefault.default.post(apiUrl + "PatientData", fhirBody).then((response)=>{
     let dob = response.data[0].DOB;
     let mrn = response.data[0].MRN;
     let name = response.data[0].Name;

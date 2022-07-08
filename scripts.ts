@@ -38,6 +38,7 @@ var isCheckingOrder = false
 var suggestions = document.getElementById('suggestions-content')
 
 // for Cerner clinical write testing only 
+console.log(window.smartPatientId)
 var encounterReference = '97954261'
 var practitionerReference = '12743472'
 // Theme Customization
@@ -124,7 +125,7 @@ dataJson.push({
 })
 
 // local fhir api call to get patients data 
-axios.post(apiUrl_Dev+"PatientData", fhirBody)
+axios.post(apiUrl+"PatientData", fhirBody)
 	.then((response)=>{
 		let dob = response.data[0].DOB
 		let mrn = response.data[0].MRN

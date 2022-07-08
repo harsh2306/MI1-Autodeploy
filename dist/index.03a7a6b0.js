@@ -1,4 +1,4 @@
-(function(window) {
+var smartPatientId = ('')(function(window) {
     var smartData = "";
     window.extractData = function() {
         var ret = $.Deferred();
@@ -10,16 +10,11 @@
             console.log('Patient present in smart:', smart.hasOwnProperty('patient'));
             if (smart.hasOwnProperty('patient')) {
                 var patient1 = smart.patient;
-                console.log("Details smart:", smart);
-                console.log("printing type of smart: ", typeof smart);
                 smartData = smart;
+                console.log("Printing encounter", smartData.tokenResponse.encounter);
+                document.getElementById("encounterRef").innerHTML = smartData.tokenResponse.encounter;
                 console.log("printing smartData object: ", smartData);
-                console.log("printing type of smart data: ", typeof smartData);
-                console.log("printing stringified smart: ", String(smartData));
-                console.log("printing smartData object KEY: ", smartData["Key"]);
                 console.log("##############################################################################");
-                document.getElementById('smartLabel').innerHTML = String(patient1.id);
-                document.getElementById('smartTextBox').innerHTML = patient1.id;
                 var pt = patient1.read();
                 var obv1 = smart.patient.api.fetchAll({
                     type: 'Observation',
@@ -57,9 +52,13 @@
                     p.fname = fname;
                     p.lname = lname;
                     p.height = getQuantityValueAndUnit(height[0]);
+                    // Using  global varible
+                    smartPatientId = patient.id;
                     p.id = patient.id;
+                    p.mrn = patient.identifier[1].value;
                     let getMRN = patient;
                     console.log("Printing Patient:", getMRN);
+                    console.log("printing getmrn value: ", getMRN.identifier[1].value);
                     // for(i=0 ; i <= getMRN.length ; i++) {
                     //   getText = i.find('text')
                     //   if (getText != null && getText['value'] == "EPI"){
@@ -102,7 +101,6 @@
                     // console.log("printing patient: ", patient); 
                     // console.log("printing getMRn: ", getMRN); 
                     // console.log("printing tempvar[1]: ", tempvar);
-                    // console.log("printing getmrn value: ", getMRN[1].join(' '));
                     if (typeof systolicbp != 'undefined') p.systolicbp = systolicbp;
                     if (typeof diastolicbp != 'undefined') p.diastolicbp = diastolicbp;
                     p.hdl = getQuantityValueAndUnit(hdl[0]);
