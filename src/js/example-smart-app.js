@@ -22,11 +22,8 @@
         console.log("printing stringified smart: ", String(smartData));
         console.log("printing smartData object KEY: ", smartData["Key"]);
         console.log("##############################################################################");
-        let obj = smartData;
-
-        console.log("printing parsed obj.patient", obj.patient);
-        document.getElementById('smartLabel').innerHTML=String(smartData);
-        document.getElementById('smartTextBox').innerHTML=smartData;
+        document.getElementById('smartLabel').innerHTML=String(patient.id);
+        document.getElementById('smartTextBox').innerHTML=patient.id;
         var pt = patient.read();
         var obv = smart.patient.api.fetchAll({
                     type: 'Observation',
