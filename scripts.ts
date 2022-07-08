@@ -128,7 +128,7 @@ dataJson.push({
 })
 
 // local fhir api call to get patients data 
-axios.post(apiUrl+"PatientData", fhirBody)
+axios.post(apiUrl_Dev+"PatientData", fhirBody)
 	.then((response)=>{
 		let dob = response.data[0].DOB
 		let mrn = response.data[0].MRN

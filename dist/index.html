@@ -71,13 +71,12 @@
 </style>
     <div id="parentFhir" class="container">
         <div id="fhirpatientid">
-            eXbMln3hu0PfFrpv2HgVHyg3<br>
-            <label id="PatientName">1</label><br>
-            <label id="MRN">2</label><br>
-            <label id="DOB">3</label><br>
-            <label id="Patientid">4</label><br>
-            <label id="encounterRef">5</label><br>
         </div>
+        <div>
+            <br>
+            <label id="Patientid">Patientid/label><br>
+            <label id="encounterRef">EncounterReference</label><br>
+        </label></div>
         <div id="fhir">
             <h4>Patient Name:</h4>
             <h4>Medical Record Number (MRN):</h4>
@@ -211,15 +210,11 @@ document.getElementById("defaultOpen").click();
         function onReady(smart) {
             if (smart.hasOwnProperty('patient')) {
                 var patient = smart.patient;
-                var pt = patient.read();
-                console.log("pt: ", pt);
                 console.log(patient);
                 console.log("Smart Object", smart);
-                // document.getElementById("PatientName").innerHTML = smart.patient.name[0].given;
-                document.getElementById("Patientid").innerHTML = patient.id;
-                document.getElementById("DOB").innerHTML = patient.birthDate;
-                document.getElementById("MRN").innerHTML = patient.identifier[1].value;
                 document.getElementById("encounterRef").innerHTML = smart.tokenResponse.encounter;
+                document.getElementById("Patientid").innerHTML = patient.id;
+                document.getElementById("fhirpatientid").innerHTML = patient.id;
                 var pt = patient.read();
             } else onError();
         }

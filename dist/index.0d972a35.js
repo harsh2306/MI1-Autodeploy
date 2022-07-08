@@ -637,7 +637,7 @@ dataJson.push({
     "Problems": []
 });
 // local fhir api call to get patients data 
-_axiosDefault.default.post(apiUrl + "PatientData", fhirBody).then((response)=>{
+_axiosDefault.default.post(apiUrl_Dev + "PatientData", fhirBody).then((response)=>{
     let dob = response.data[0].DOB;
     let mrn = response.data[0].MRN;
     let name = response.data[0].Name;
