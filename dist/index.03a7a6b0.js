@@ -1,5 +1,6 @@
-var smartPatientId = ('')(function(window) {
+(function(window) {
     var smartData = "";
+    window.smartPatientId = "";
     window.extractData = function() {
         var ret = $.Deferred();
         function onError() {
