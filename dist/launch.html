@@ -14,7 +14,9 @@
     <title>Example-SMART-App</title>
   </head>
   <body>
-    <div id="MI1ClientId"></div>
+    <div>
+      <label id="MI1ClientId"></label>
+    </div>
     <!-- Required JS files to enable this page to embed within an MPage -->
     <!--
       Temporarily disable cerner-smart-embeddable-lib
@@ -31,6 +33,7 @@
     <script>var url = new URL(location.href);
 console.log(url);
 if (url.searchParams.has("MI1ClientId")) {
+    window.MI1ClientId = url.searchParams.get('MI1ClientId');
     document.getElementById("MI1ClientId").innerHTML = url.searchParams.get('MI1ClientId');
     console.log("Found MI1ClientId");
     //check if MI1cient Id id present in the URL or Not
