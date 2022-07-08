@@ -11,15 +11,19 @@
     }
 
     function onReady(smart)  {
-      console.log('Patient present in smart:' , smart.hasOwnProperty('patient'))
+      console.log('Patient present in smart:' , smart.hasOwnProperty('patient'));
       if (smart.hasOwnProperty('patient')) {
         var patient = smart.patient;
         console.log("Details smart:", smart)
         console.log("printing type of smart: ", typeof(smart));
         smartData = smart;
-        console.log("printing smart object: ", smartData);
-        console.log("printing type of smart data", typeof(smartData));
+        console.log("printing smartData object: ", smartData);
+        console.log("printing type of smart data: ", typeof(smartData));
         console.log("printing stringified smart: ", String(smartData));
+        console.log("printing smartData object KEY: ", smartData["Key"]);
+        console.log("##############################################################################");
+        const obj = JSON.parse(smartData);
+        console.log("printing parsed obj", obj);
         document.getElementById('smartLabel').innerHTML=String(smartData);
         document.getElementById('smartTextBox').innerHTML=smartData;
         var pt = patient.read();
