@@ -226,11 +226,12 @@
                 function onReady(smart)  {
                     if (smart.hasOwnProperty('patient')) {
                         var patient = smart.patient;
+                        console.log(patient);
                         console.log("Smart Object", smart);
                         // document.getElementById("PatientName").innerHTML = smart.patient.name[0].given;
-                        document.getElementById("Patientid").innerHTML = smart.patient.id;
-                        document.getElementById("DOB").innerHTML = smart.patient.birthDate;
-                        document.getElementById("MRN").innerHTML = smart.patient.identifier[1].value;
+                        document.getElementById("Patientid").innerHTML = patient.id;
+                        document.getElementById("DOB").innerHTML = patient.birthDate;
+                        document.getElementById("MRN").innerHTML = patient.identifier[1].value;
                         document.getElementById("encounterRef").innerHTML = smart.tokenResponse.encounter;
                         var pt = patient.read();
                     } else {
