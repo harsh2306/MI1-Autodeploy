@@ -826,17 +826,19 @@ getSendButton.addEventListener('click', function(e){
 
 // Read latest 5 Clinical data
 let getReadButton = document.getElementById('clinicalRead')
+let returnData = []
+let clinicalreadresponsedata = ''
 getReadButton.addEventListener('click', function(e){
 	axios.post(apiUrl_Dev+'ReadClinicalNotes',{
 		"MI1ClientID":MI1_Client_ID,
 		"patientId":PatientId
 	}).then(response=>{
-		let returnData = []
+		returnData = []
 		returnData = response.data
-		console.log(returnData['returnData'][0]['DecodedData']);
-		let clinicalreadresponsedata = atob(returnData['returnData'][0]['DecodedData']);
-		// console.log(JSON.parse(clinicalreadresponsedata[0]))
-
+		// console.log(returnData)
+		clinicalreadresponsedata = atob(returnData['returnData'][0]['EncodedData']);
+		console.log(clinicalreadresponsedata)
+		returnData = null
 		view.dispatch({
 			changes: {from: currentLineFrom, to: currentLineTo, insert: clinicalreadresponsedata}
 		});
