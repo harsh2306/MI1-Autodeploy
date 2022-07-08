@@ -92,6 +92,8 @@ let PatientId = window.smartPatientId
 // let MI1_Client_ID= urlParams.get('MI1ClientID')
 let MI1_Client_ID= window.MI1ClientId
 
+console.log(MI1_Client_ID, PatientId)
+
 // generate id 
 // let MI1_Client_ID = 123456789
 // let PatientId = "eq081-VQEgP8drUUqCWzHfw3"
