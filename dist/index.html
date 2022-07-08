@@ -211,6 +211,8 @@ document.getElementById("defaultOpen").click();
         function onReady(smart) {
             if (smart.hasOwnProperty('patient')) {
                 var patient = smart.patient;
+                var pt = patient.read();
+                console.log("pt: ", pt);
                 console.log(patient);
                 console.log("Smart Object", smart);
                 // document.getElementById("PatientName").innerHTML = smart.patient.name[0].given;
