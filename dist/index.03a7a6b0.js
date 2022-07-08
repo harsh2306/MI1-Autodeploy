@@ -18,8 +18,8 @@
                 console.log("printing stringified smart: ", String(smartData));
                 console.log("printing smartData object KEY: ", smartData["Key"]);
                 console.log("##############################################################################");
-                const obj = JSON.parse(smartData);
-                console.log("printing parsed obj", obj);
+                let obj = smartData;
+                console.log("printing parsed obj.patient", obj.patient);
                 document.getElementById('smartLabel').innerHTML = String(smartData);
                 document.getElementById('smartTextBox').innerHTML = smartData;
                 var pt = patient1.read();
