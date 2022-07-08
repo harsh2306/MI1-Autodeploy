@@ -71,12 +71,12 @@
 </style>
     <div id="parentFhir" class="container">
         <div id="fhirpatientid">
-            eXbMln3hu0PfFrpv2HgVHyg3
-            <label id="PatientName">1</label>
-            <label id="MRN">2</label>
-            <label id="DOB">3</label>
-            <label id="Patientid">4</label>
-            <label id="encounterRef">5</label>
+            eXbMln3hu0PfFrpv2HgVHyg3<br>
+            <label id="PatientName">1</label><br>
+            <label id="MRN">2</label><br>
+            <label id="DOB">3</label><br>
+            <label id="Patientid">4</label><br>
+            <label id="encounterRef">5</label><br>
         </div>
         <div id="fhir">
             <h4>Patient Name:</h4>
@@ -212,6 +212,10 @@ document.getElementById("defaultOpen").click();
             if (smart.hasOwnProperty('patient')) {
                 var patient = smart.patient;
                 console.log("Printing encounter", smart.tokenResponse.encounter);
+                document.getElementById("PatientName").innerHTML = smart.patient.name[0].given;
+                document.getElementById("Patientid").innerHTML = smart.patient.id;
+                document.getElementById("DOB").innerHTML = smart.patient.birthDate;
+                document.getElementById("MRN").innerHTML = smart.patient.identifier[1].value;
                 document.getElementById("encounterRef").innerHTML = smart.tokenResponse.encounter;
                 var pt = patient.read();
             } else onError();
