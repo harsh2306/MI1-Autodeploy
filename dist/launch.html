@@ -36,6 +36,7 @@ if (url.searchParams.has("MI1ClientId")) {
     window.MI1ClientId = url.searchParams.get('MI1ClientId');
     document.getElementById("MI1ClientId").innerHTML = url.searchParams.get('MI1ClientId');
     console.log("Found MI1ClientId");
+    localStorage.setItem('GlobalMI1ClientId', url.searchParams.get('MI1ClientId'));
     //check if MI1cient Id id present in the URL or Not
     // For EPIC 
     if (MI1ClientId == 123456789) {
