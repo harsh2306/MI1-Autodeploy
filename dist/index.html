@@ -76,6 +76,9 @@
         <label>encounterRef: </label>
         <div id="encounterRef">
         </div>
+        <label>MI1ClientId: </label>
+        <div id="mi1clientid">
+        </div>
         <div id="fhir">
             <h4>Patient Name:</h4>
             <h4>Medical Record Number (MRN):</h4>
@@ -212,7 +215,7 @@ document.getElementById("defaultOpen").click();
                 console.log(patient);
                 console.log("Smart Object", smart);
                 document.getElementById("encounterRef").innerHTML = smart.tokenResponse.encounter;
-                document.getElementById("Patientid").innerHTML = patient.id;
+                document.getElementById("mi1clientIid").innerHTML = localStorage.getItem('MI1ClientId');
                 document.getElementById("fhirpatientid").innerHTML = patient.id;
                 var pt = patient.read();
             } else onError();
