@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"bMI4S":[function(require,module,exports) {
+})({"6akXc":[function(require,module,exports) {
 "use strict";
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -535,6 +535,7 @@ var _autocomplete = require("@codemirror/autocomplete");
 var _state = require("@codemirror/state");
 var _tooltip = require("@codemirror/tooltip");
 var _language = require("@codemirror/language");
+// import {getClientId} from 'launch.html'
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 const headers = {
@@ -609,6 +610,8 @@ let PatientId = document.getElementById("fhirpatientid").innerHTML;
 // let MI1_Client_ID = urlParams.get('MI1ClientID')
 let MI1_Client_ID = localStorage.getItem('MI1ClientId');
 let MI1_Client_ID2 = document.cookie;
+// type MI1_Client_ID3 = {MI1ClientId : Number}
+// const data1 = getClientId.
 // let MI1_Client_ID= document.getElementById("MI1ClientId").innerHTML
 // let MI1_Client_ID= window.MI1ClientId
 console.log(PatientId, MI1_Client_ID, MI1_Client_ID2);
@@ -25275,6 +25278,6 @@ var utils = require('./../utils');
     return utils.isObject(payload) && payload.isAxiosError === true;
 };
 
-},{"./../utils":"5By4s"}]},["bMI4S","ixaFm"], "ixaFm", "parcelRequire2667")
+},{"./../utils":"5By4s"}]},["6akXc","ixaFm"], "ixaFm", "parcelRequire2667")
 
 //# sourceMappingURL=index.0d972a35.js.map
