@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"6akXc":[function(require,module,exports) {
+})({"bMI4S":[function(require,module,exports) {
 "use strict";
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -606,10 +606,9 @@ const urlParams = new URLSearchParams(queryString);
 // let PatientId= urlParams.get('Patientid')
 // let PatientId = document.getElementById("smartTextBox")
 let PatientId = document.getElementById("fhirpatientid").innerHTML;
-// let MI1_Client_ID= urlParams.get('MI1ClientID')
-console.log(localStorage.getItem("GlobalMI1ClientId"));
-let MI1_Client_ID = localStorage.getItem("GlobalMI1ClientId");
-//  let MI1_Client_ID= window.MI1ClientId
+let MI1_Client_ID = urlParams.get('MI1ClientID');
+// let MI1_Client_ID= document.getElementById("MI1ClientId").innerHTML
+// let MI1_Client_ID= window.MI1ClientId
 console.log(PatientId, MI1_Client_ID);
 // generate id 
 // let MI1_Client_ID = 123456789
@@ -25274,6 +25273,6 @@ var utils = require('./../utils');
     return utils.isObject(payload) && payload.isAxiosError === true;
 };
 
-},{"./../utils":"5By4s"}]},["6akXc","ixaFm"], "ixaFm", "parcelRequire2667")
+},{"./../utils":"5By4s"}]},["bMI4S","ixaFm"], "ixaFm", "parcelRequire2667")
 
 //# sourceMappingURL=index.0d972a35.js.map

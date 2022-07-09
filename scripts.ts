@@ -89,10 +89,9 @@ const urlParams = new URLSearchParams(queryString);
 // let PatientId= urlParams.get('Patientid')
 // let PatientId = document.getElementById("smartTextBox")
 let PatientId = document.getElementById("fhirpatientid").innerHTML
-// let MI1_Client_ID= urlParams.get('MI1ClientID')
-console.log(localStorage.getItem("GlobalMI1ClientId"));
-let MI1_Client_ID = localStorage.getItem("GlobalMI1ClientId") 
-//  let MI1_Client_ID= window.MI1ClientId
+let MI1_Client_ID= urlParams.get('MI1ClientID')
+// let MI1_Client_ID= document.getElementById("MI1ClientId").innerHTML
+// let MI1_Client_ID= window.MI1ClientId
 
 console.log(PatientId, MI1_Client_ID)
 
