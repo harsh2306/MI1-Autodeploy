@@ -4,7 +4,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="/launch.7a30a80f.css">
-    <script src="/launch.fe19ea49.js"></script>
     <!--
       Temporarily disable cerner-smart-embeddable-lib
     <link rel='stylesheet' type='text/css' href='./lib/css/cerner-smart-embeddable-lib-1.0.0.min.css'>
@@ -35,6 +34,9 @@
 console.log(url);
 if (url.searchParams.has("MI1ClientId")) {
     MI1ClientId = url.searchParams.get('MI1ClientId');
+    document.cookie = "MI1ClientId=" + MI1ClientId;
+    localStorage.setItem('MI1ClientId', MI1ClientId);
+    console.log('printing local Storage', localStorage.getItem('MI1ClientId'));
     document.getElementById("MI1ClientId").innerHTML = url.searchParams.get('MI1ClientId');
     console.log("Found MI1ClientId");
     //check if MI1cient Id id present in the URL or Not

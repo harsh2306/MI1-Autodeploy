@@ -36,7 +36,6 @@ var searchOptions = []
 var lastFetchedCUI = ''
 var isCheckingOrder = false
 var suggestions = document.getElementById('suggestions-content')
-declare var MI1ClientID : any
 
 
 // for Cerner clinical write testing only 
@@ -90,11 +89,13 @@ const urlParams = new URLSearchParams(queryString);
 // let PatientId= urlParams.get('Patientid')
 // let PatientId = document.getElementById("smartTextBox")
 let PatientId = document.getElementById("fhirpatientid").innerHTML
-let MI1_Client_ID= MI1ClientID
+// let MI1_Client_ID = urlParams.get('MI1ClientID')
+let MI1_Client_ID = localStorage.getItem('MI1ClientId')
+let MI1_Client_ID2 = document.cookie
 // let MI1_Client_ID= document.getElementById("MI1ClientId").innerHTML
 // let MI1_Client_ID= window.MI1ClientId
 
-console.log(PatientId, MI1_Client_ID)
+console.log(PatientId, MI1_Client_ID, MI1_Client_ID2)
 
 // generate id 
 // let MI1_Client_ID = 123456789
