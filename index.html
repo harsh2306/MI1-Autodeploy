@@ -230,7 +230,6 @@
                         console.log(patient);
                         console.log("Smart Object", smart);
                         document.getElementById("encounterRef").innerHTML = smart.tokenResponse.encounter;
-                        document.getElementById("mi1clientIid").innerHTML = localStorage.getItem('MI1ClientId');
                         document.getElementById("fhirpatientid").innerHTML = patient.id;
                         var pt = patient.read();
                     } else {

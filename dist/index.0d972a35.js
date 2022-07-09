@@ -609,12 +609,12 @@ const urlParams = new URLSearchParams(queryString);
 let PatientId = document.getElementById("fhirpatientid").innerHTML;
 // let MI1_Client_ID = urlParams.get('MI1ClientID')
 let MI1_Client_ID = localStorage.getItem('MI1ClientId');
-let MI1_Client_ID2 = document.cookie;
+document.getElementById("mi1clientIid").innerHTML = MI1_Client_ID;
 // type MI1_Client_ID3 = {MI1ClientId : Number}
 // const data1 = getClientId.
 // let MI1_Client_ID= document.getElementById("MI1ClientId").innerHTML
 // let MI1_Client_ID= window.MI1ClientId
-console.log(PatientId, MI1_Client_ID, MI1_Client_ID2);
+console.log(PatientId, MI1_Client_ID);
 // generate id 
 // let MI1_Client_ID = 123456789
 // let PatientId = "eq081-VQEgP8drUUqCWzHfw3"
