@@ -7,6 +7,7 @@ import {autocompletion, CompletionContext} from "@codemirror/autocomplete"
 import {StateField, EditorSelection} from "@codemirror/state"
 import {Tooltip, showTooltip} from "@codemirror/tooltip"
 import {indentUnit} from '@codemirror/language'
+// import {getClientId} from 'launch.html'
 
 
 import axios from 'axios';
@@ -92,6 +93,8 @@ let PatientId = document.getElementById("fhirpatientid").innerHTML
 // let MI1_Client_ID = urlParams.get('MI1ClientID')
 let MI1_Client_ID = localStorage.getItem('MI1ClientId')
 let MI1_Client_ID2 = document.cookie
+// type MI1_Client_ID3 = {MI1ClientId : Number}
+// const data1 = getClientId.
 // let MI1_Client_ID= document.getElementById("MI1ClientId").innerHTML
 // let MI1_Client_ID= window.MI1ClientId
 
