@@ -32,7 +32,7 @@
       var url = new URL(location.href);
       console.log(url);
       if (url.searchParams.has("MI1ClientId")){
-        MI1ClientId = url.searchParams.get('MI1ClientId');
+        var MI1ClientId = url.searchParams.get('MI1ClientId');
 
         document.cookie = "MI1ClientId=" + MI1ClientId;
 
