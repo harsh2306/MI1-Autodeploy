@@ -96,7 +96,7 @@ for(let key in localStorage) {
 	alert(key); // shows getItem, setItem and other built-in stuff
   }
 console.log(PatientId, MI1_Client_ID)
-document.getElementById("mi1clientIid").innerHTML = MI1_Client_ID
+document.getElementById("mi1clientid").innerHTML = MI1_Client_ID
 // type MI1_Client_ID3 = {MI1ClientId : Number}
 // const data1 = getClientId.
 // let MI1_Client_ID= document.getElementById("MI1ClientId").innerHTML
