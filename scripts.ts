@@ -41,7 +41,7 @@ var suggestions = document.getElementById('suggestions-content')
 
 // for Cerner clinical write testing only 
 
-var encounterReference = '97954261'
+var encounterReference = document.getElementById("encounterRef").innerHTML
 var practitionerReference = '12743472'
 // Theme Customization
 
@@ -800,7 +800,7 @@ getSendButton.addEventListener('click', function(e){
 			"MI1ClientID":MI1_Client_ID,
 			"patientId":PatientId,
 			"practitionerReference":"12743472",
-			"encounterReference":"97954261",
+			"encounterReference": encounterReference,
 			"note_content":EncodedString
 		}
 	}

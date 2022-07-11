@@ -563,7 +563,7 @@ var lastFetchedCUI = '';
 var isCheckingOrder = false;
 var suggestions = document.getElementById('suggestions-content');
 // for Cerner clinical write testing only 
-var encounterReference = '97954261';
+var encounterReference = document.getElementById("encounterRef").innerHTML;
 var practitionerReference = '12743472';
 // Theme Customization
 let myTheme = _basicSetup.EditorView.theme({
@@ -1201,7 +1201,7 @@ getSendButton.addEventListener('click', function(e) {
         "MI1ClientID": MI1_Client_ID,
         "patientId": PatientId,
         "practitionerReference": "12743472",
-        "encounterReference": "97954261",
+        "encounterReference": encounterReference,
         "note_content": EncodedString
     };
     _axiosDefault.default.post(apiUrl_Dev + 'ClinicalNote', clinicalNoteBody).then((response)=>{
