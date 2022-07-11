@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"bMI4S":[function(require,module,exports) {
+})({"6akXc":[function(require,module,exports) {
 "use strict";
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -609,12 +609,13 @@ const urlParams = new URLSearchParams(queryString);
 let PatientId = document.getElementById("fhirpatientid").innerHTML;
 // let MI1_Client_ID = urlParams.get('MI1ClientID')
 let MI1_Client_ID = localStorage.getItem('MI1ClientId');
+for(let key in localStorage)alert(key); // shows getItem, setItem and other built-in stuff
+console.log(PatientId, MI1_Client_ID);
 document.getElementById("mi1clientIid").innerHTML = MI1_Client_ID;
 // type MI1_Client_ID3 = {MI1ClientId : Number}
 // const data1 = getClientId.
 // let MI1_Client_ID= document.getElementById("MI1ClientId").innerHTML
 // let MI1_Client_ID= window.MI1ClientId
-console.log(PatientId, MI1_Client_ID);
 // generate id 
 // let MI1_Client_ID = 123456789
 // let PatientId = "eq081-VQEgP8drUUqCWzHfw3"
@@ -25278,6 +25279,6 @@ var utils = require('./../utils');
     return utils.isObject(payload) && payload.isAxiosError === true;
 };
 
-},{"./../utils":"5By4s"}]},["bMI4S","ixaFm"], "ixaFm", "parcelRequire2667")
+},{"./../utils":"5By4s"}]},["6akXc","ixaFm"], "ixaFm", "parcelRequire2667")
 
 //# sourceMappingURL=index.0d972a35.js.map

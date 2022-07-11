@@ -92,13 +92,17 @@ const urlParams = new URLSearchParams(queryString);
 let PatientId = document.getElementById("fhirpatientid").innerHTML
 // let MI1_Client_ID = urlParams.get('MI1ClientID')
 let MI1_Client_ID = localStorage.getItem('MI1ClientId')
+for(let key in localStorage) {
+	alert(key); // shows getItem, setItem and other built-in stuff
+  }
+console.log(PatientId, MI1_Client_ID)
 document.getElementById("mi1clientIid").innerHTML = MI1_Client_ID
 // type MI1_Client_ID3 = {MI1ClientId : Number}
 // const data1 = getClientId.
 // let MI1_Client_ID= document.getElementById("MI1ClientId").innerHTML
 // let MI1_Client_ID= window.MI1ClientId
 
-console.log(PatientId, MI1_Client_ID)
+
 
 // generate id 
 // let MI1_Client_ID = 123456789
