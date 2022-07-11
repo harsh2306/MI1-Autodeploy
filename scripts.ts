@@ -133,6 +133,7 @@ dataJson.push({
 // local fhir api call to get patients data 
 axios.post(apiUrl_Dev+"PatientData", fhirBody)
 	.then((response)=>{
+		console.log(response)
 		let dob = response.data[0].DOB
 		let mrn = response.data[0].MRN
 		let name = response.data[0].Name
@@ -785,6 +786,7 @@ getSendButton.addEventListener('click', function(e){
 			"MI1ClientID":MI1_Client_ID,
 			"patientId":PatientId,
 			"note_type_code":"11488-4",
+			"encounterReference": encounterReference,
 			"note_content":EncodedString
 		}
 	}
