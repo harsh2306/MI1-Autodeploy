@@ -88,19 +88,12 @@ let myTheme = EditorView.theme({
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 // let PatientId= urlParams.get('Patientid')
-// let PatientId = document.getElementById("smartTextBox")
 let PatientId = document.getElementById("fhirpatientid").innerHTML
 // let MI1_Client_ID = urlParams.get('MI1ClientID')
 let MI1_Client_ID = localStorage.getItem('MI1ClientId')
-for(let key in localStorage) {
-	alert(key); // shows getItem, setItem and other built-in stuff
-  }
 console.log(PatientId, MI1_Client_ID)
 document.getElementById("mi1clientid").innerHTML = MI1_Client_ID
-// type MI1_Client_ID3 = {MI1ClientId : Number}
-// const data1 = getClientId.
 // let MI1_Client_ID= document.getElementById("MI1ClientId").innerHTML
-// let MI1_Client_ID= window.MI1ClientId
 
 
 
@@ -799,7 +792,7 @@ getSendButton.addEventListener('click', function(e){
 		clinicalNoteBody = {
 			"MI1ClientID":MI1_Client_ID,
 			"patientId":PatientId,
-			"practitionerReference":"12743472",
+			"practitionerReference":practitionerReference,
 			"encounterReference": encounterReference,
 			"note_content":EncodedString
 		}
