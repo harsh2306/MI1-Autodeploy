@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"bMI4S":[function(require,module,exports) {
+})({"6akXc":[function(require,module,exports) {
 "use strict";
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -605,15 +605,15 @@ let myTheme = _basicSetup.EditorView.theme({
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 // let PatientId= urlParams.get('Patientid')
-let PatientId = document.getElementById("fhirpatientid").innerHTML;
 // let MI1_Client_ID = urlParams.get('MI1ClientID')
+// let MI1_Client_ID= document.getElementById("MI1ClientId").innerHTML
+let PatientId = document.getElementById("fhirpatientid").innerHTML;
 let MI1_Client_ID = localStorage.getItem('MI1ClientId');
 console.log(PatientId, MI1_Client_ID);
 document.getElementById("mi1clientid").innerHTML = MI1_Client_ID;
-// let MI1_Client_ID= document.getElementById("MI1ClientId").innerHTML
 // generate id 
-// let MI1_Client_ID = 123456789
-// let PatientId = "eq081-VQEgP8drUUqCWzHfw3"
+// let MI1_Client_ID = '12724067'
+// let PatientId = "1122334455"
 const fhirBody = {
     "PatientId": PatientId,
     "MI1ClientID": MI1_Client_ID
@@ -641,16 +641,23 @@ dataJson.push({
 // local fhir api call to get patients data 
 _axiosDefault.default.post(apiUrl_Dev + "PatientData", fhirBody).then((response)=>{
     console.log(response);
-    let dob = response.data[0].DOB;
-    let mrn = response.data[0].MRN;
-    let name = response.data[0].Name;
-    let fhirHTMl = document.getElementById("fhir");
-    var fhirHTMl_div = '';
-    fhirHTMl_div += '<div class="fhir-header"><h4>';
-    fhirHTMl_div += 'Patient Name : ' + name + '</h4>';
-    fhirHTMl_div += '<h4> Medical Record Number (MRN): ' + mrn + '</h4>';
-    fhirHTMl_div += '<h4> Date Of Birth : ' + dob + '</h4>';
-    fhirHTMl.innerHTML = fhirHTMl_div;
+    if (response.data == []) {
+        let dob = response.data[0].DOB;
+        let mrn = response.data[0].MRN;
+        let name = response.data[0].Name;
+        let fhirHTMl = document.getElementById("fhir");
+        var fhirHTMl_div = '';
+        fhirHTMl_div += '<div class="fhir-header"><h4>';
+        fhirHTMl_div += 'Patient Name : ' + name + '</h4>';
+        fhirHTMl_div += '<h4> Medical Record Number (MRN): ' + mrn + '</h4>';
+        fhirHTMl_div += '<h4> Date Of Birth : ' + dob + '</h4>';
+        fhirHTMl.innerHTML = fhirHTMl_div;
+    } else {
+        let ErrorMessage = response.data.ErrorMessage;
+        let StatusCode = response.data.StatusCode;
+        console.log(ErrorMessage);
+        alert("ErrorMessage: " + ErrorMessage + "\nStatusCode: " + StatusCode);
+    }
 });
 // local fhir api call to get patients condition
 // setTimeout(() => { 
@@ -25276,6 +25283,6 @@ var utils = require('./../utils');
     return utils.isObject(payload) && payload.isAxiosError === true;
 };
 
-},{"./../utils":"5By4s"}]},["bMI4S","ixaFm"], "ixaFm", "parcelRequire2667")
+},{"./../utils":"5By4s"}]},["6akXc","ixaFm"], "ixaFm", "parcelRequire2667")
 
 //# sourceMappingURL=index.0d972a35.js.map
