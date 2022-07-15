@@ -230,8 +230,12 @@
                         var patient = smart.patient;
                         console.log(patient);
                         console.log("Smart Object", smart);
-                        localStorage.setItem('encounterRef', smart.tokenResponse.encounter);
-                        localStorage.setItem('fhirpatientid', patient.id);
+                        var patientID = patient.id;
+                        var encounterID = smart.tokenResponse.encounter;
+                        localStorage.setItem('encounterRef', encounterID);
+                        localStorage.setItem('fhirpatientid', patientID);
+                        console.log(patientID, encounterID);
+
                         // document.getElementById("encounterRef").innerHTML = smart.tokenResponse.encounter;
                         // document.getElementById("fhirpatientid").innerHTML = patient.id;
                         var pt = patient.read();

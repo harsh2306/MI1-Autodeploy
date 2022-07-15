@@ -605,6 +605,7 @@ const urlParams = new URLSearchParams(queryString);
 // let PatientId= urlParams.get('Patientid')
 // let MI1_Client_ID = urlParams.get('MI1ClientID')
 // let MI1_Client_ID= document.getElementById("MI1ClientId").innerHTML
+for(var key in localStorage)console.log(key, localStorage.getItem(key));
 let PatientId = localStorage.getItem('fhirpatientid');
 let MI1_Client_ID = localStorage.getItem('MI1ClientId');
 var encounterReference = localStorage.getItem('encounterRef');
